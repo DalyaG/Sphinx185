@@ -1,0 +1,282 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{algorithm,algpseudocode}
+\usepackage{graphicx, nicefrac}
+\usepackage{setspace}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 95 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 17 -1
+\bullet 1 0 15 -1
+\bullet 2 0 10 -1
+\bullet 3 0 0 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection*
+Problem Definition:
+\end_layout
+
+\begin_layout Standard
+We are given a set of 
+\begin_inset Formula $n$
+\end_inset
+
+ sequences 
+\begin_inset Formula $S=\left\{ s^{\left(1\right)},..,s^{\left(n\right)}\right\} $
+\end_inset
+
+, each sequence has 
+\begin_inset Formula $m$
+\end_inset
+
+ vertices (numbers) 
+\begin_inset Formula $s^{\left(i\right)}=\left(v_{1}^{\left(i\right)},..,v_{m}^{\left(i\right)}\right)$
+\end_inset
+
+, each vertex colored in one out of 
+\begin_inset Formula $10$
+\end_inset
+
+ colors (digits).
+\end_layout
+
+\begin_layout Standard
+We are given a secret sequence 
+\begin_inset Formula $s^{*}=\left(v_{1}^{*},..,v_{m}^{*}\right)$
+\end_inset
+
+ for which the colors of the vertices are unknown.
+\end_layout
+
+\begin_layout Standard
+A vertex 
+\begin_inset Formula $v_{j}^{\left(i\right)}$
+\end_inset
+
+ is 
+\series bold
+correct
+\series default
+ iff its color of is equal to 
+\begin_inset Formula $v_{j}^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We are given the number of correct vertices in each sequence in 
+\begin_inset Formula $S$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $\left\{ d^{\left(1\right)},..,d^{\left(n\right)}\right\} $
+\end_inset
+
+, and are promised that given 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $D$
+\end_inset
+
+, the colors of 
+\begin_inset Formula $s^{*}$
+\end_inset
+
+ are unique.
+\end_layout
+
+\begin_layout Subparagraph*
+Our goal 
+\end_layout
+
+\begin_layout Standard
+is to discover the colors of the vertices in 
+\begin_inset Formula $s^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Problem Example:
+\end_layout
+
+\begin_layout Itemize
+Number of sequences given: 
+\begin_inset Formula $n=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Length of each sequence: 
+\begin_inset Formula $m=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The colors of the vertices in 
+\begin_inset Formula $S$
+\end_inset
+
+ are:
+\begin_inset Formula 
+\begin{align*}
+s^{\left(1\right)}=\left(9,0,3,4,2\right),s^{\left(2\right)}=\left(7,0,7,9,4\right),s^{\left(3\right)}=\left(3,9,4,5,8\right)\\
+s^{\left(4\right)}=\left(3,4,1,0,9\right),s^{\left(5\right)}=\left(5,1,5,4,5\right),s^{\left(6\right)}=\left(1,2,5,3,1\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The number of correct vertices in 
+\begin_inset Formula $S$
+\end_inset
+
+ is given to be 
+\begin_inset Formula $\left\{ 2,0,2,1,2,1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Modeling as an ILP (Integer Linear Program):
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left\{ x_{i,c}\right\} _{i\in[m],c\in[10]}$
+\end_inset
+
+ be binary variables indicating the color of the digits in 
+\begin_inset Formula $s^{*}$
+\end_inset
+
+, that is: 
+\begin_inset Formula 
+\[
+x_{j,c}=1\thinspace\thinspace\iff\thinspace\thinspace v_{j}^{*}=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since each vertex in 
+\begin_inset Formula $s^{*}$
+\end_inset
+
+ has only one color, we get the constraints: 
+\begin_inset Formula 
+\[
+\left\{ \sum_{c=0}^{9}x_{j,c}=1\right\} _{j\in[m]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And from the input of correct vertices we get the constraints: 
+\begin_inset Formula 
+\[
+\left\{ \sum_{j\in[m]}x_{j,v_{j}^{\left(i\right)}}=d^{\left(i\right)}\right\} _{i\in[n]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we are guarantied that only one solution exists, we can put a dummy
+ objective function of our choice, and solve the ILP to get the unique solution.
+\end_layout
+
+\end_body
+\end_document
