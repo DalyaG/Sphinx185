@@ -9,7 +9,7 @@ You can start your onboarding with sphinx by browsing
 [the documentation of this repository](http://htmlpreview.github.io/?https://github.com/DalyaG/Sphinx185/blob/experimentations/documentation/_build/html/index.html),
 that has this landing page:
 
-![Documentation Landing Page](../experimentations/data/LandingPage.png)
+![Documentation Landing Page](../master/data/LandingPage.png)
 
 At the button of every page, you can find the source code 
 that will help you generate cool documentation for your own project!
