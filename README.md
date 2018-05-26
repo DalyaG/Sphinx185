@@ -6,7 +6,7 @@ as a case study.
 
 
 You can start your onboarding with sphinx by browsing 
-[the documentation of this repository](http://htmlpreview.github.io/?https://github.com/DalyaG/Sphinx185/blob/experimentations/documentation/_build/html/index.html),
+[the documentation of this repository](http://htmlpreview.github.io/?https://github.com/DalyaG/Sphinx185/blob/master/documentation/_build/html/index.html),
 that has this landing page:
 
 ![Documentation Landing Page](../master/data/LandingPage.png)
