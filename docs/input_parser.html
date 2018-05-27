@@ -1,0 +1,185 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Input Parser &#8212; Sphinx185  documentation</title>
+    <link rel="stylesheet" href="_static/graphite.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Naming Utils" href="naming_utils.html" />
+    <link rel="prev" title="Solver Runner" href="run_euler_185_solver.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="naming_utils.html" title="Naming Utils"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="run_euler_185_solver.html" title="Solver Runner"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="input-parser">
+<h1>Input Parser<a class="headerlink" href="#input-parser" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<span class="target" id="module-src.input_parser"></span><dl class="function">
+<dt id="src.input_parser.input_parser">
+<code class="descclassname">src.input_parser.</code><code class="descname">input_parser</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/input_parser.html#input_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.input_parser.input_parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given length of sequences, load input data corresponding to this length.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>m</strong> – Length of sequences in the input.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">tuple, containing:<ol class="arabic simple">
+<li>sequences_list: List of sequences in the input, parsed such that                            sequences_list[i] holds a list of integers that are the colors of this sequence.</li>
+<li>n_correct_vertices_list: List holding the number of correct vertices in each sequence in sequences_list.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function assumes the existence of ‘data/input_m.txt’</p>
+</div>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">find a better name for n_correct_vertices_list</p>
+</div>
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="this-page-was-generated-using-this-rst-code">
+<h2>This page was generated using this .rst code:<a class="headerlink" href="#this-page-was-generated-using-this-rst-code" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Input Parser
+==================
+|
+|
+
+.. automodule:: src.input_parser
+   :members: input_parser
+
+|
+|
+
+This page was generated using this .rst code:
+*********************************************
+
+|
+
+.. literalinclude:: input_parser.rst
+
+|
+|
+
+:ref:`Return Home &lt;mastertoc&gt;`
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="index.html#mastertoc"><span class="std std-ref">Return Home</span></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/sphinx_and_dalya.png" alt="Logo"/>
+            </a></p>
+<h3><a href="index.html">Sphinx185</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="riddle_description.html">Euler’s 185th Riddle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_euler_185_solver.html">Solver Runner</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="naming_utils.html">Naming Utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ilp_manager.html">The ILP Manager class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf.html">The main configurations file: conf.py</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="naming_utils.html" title="Naming Utils"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="run_euler_185_solver.html" title="Solver Runner"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, DalyaG.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+    </div>
+  </body>
+</html>

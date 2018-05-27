@@ -55,7 +55,8 @@ OK Let's get to business:
 |
 
 
-.. The following command allows me to chose line breaks inside a "note" environment.
+.. TIP OF THE HOUR:
+   The following command allows me to choose line breaks inside a "note" environment.
    Outside a special environment, i could use
    | vertical bars
    | to format lines
@@ -86,7 +87,13 @@ OK Let's get to business:
     * After editing the files, run ``make html`` from inside the folder in which you installed sphinx. |br|
       (**TIP OF THE DAY**: actually, run ``make clean html`` to clear the documentation cache and build from scratch)
 
-    * Open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
+    * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
+
+    * To share - copy ``documentation/_build/html/`` into a new ``docs`` folder, |br|
+      and use `GitHub Pages <https://pages.github.com/>`_ to host your documentation:
+
+      #. Go to the kwhbjewhbrlj2bel
+
 
 |
 
