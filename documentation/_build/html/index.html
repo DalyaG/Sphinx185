@@ -89,23 +89,30 @@
 <p class="topic-title first">How to use this for YOUR next project:</p>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></li>
-<li>Option 1: from the terminal, run <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> from the directory of the repository you wish to document, <br />
+<li>Option 1: from the terminal, run <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> from the root of the project you wish to document, <br />
 and follow the suggestions of your choice from this tutorial. <br />
-(My advice: install sphinx inside a dedicated documentation folder, to keep your project from clutter)</li>
-<li>Option 2: copy-paste the documentation folder in this project, and edit the relevant <code class="docutils literal"><span class="pre">.rst</span></code> files.</li>
-<li>On any case, the way to add pages to your documentation, is by:<ol class="arabic">
-<li>creating a <code class="docutils literal"><span class="pre">.rst</span></code> file for the function/module <br />
-you wish to document (you can use the templates supplied here), and</li>
-<li>add the name of the <code class="docutils literal"><span class="pre">.rst</span></code> file to the <br />
-<code class="docutils literal"><span class="pre">toctree</span></code> in <code class="docutils literal"><span class="pre">index.rst</span></code> (the source code for this page).</li>
+(My advice: install sphinx inside a dedicated <code class="docutils literal"><span class="pre">documentation</span></code> folder, to keep your project from clutter)</li>
+<li>Option 2: copy the <code class="docutils literal"><span class="pre">documentation</span></code> folder in this repository and make it a subdirectory in your local project, <br />
+and edit the relevant <code class="docutils literal"><span class="pre">.rst</span></code> files.</li>
+<li>On any case, the way to add a page to your documentation, is by:<ol class="arabic">
+<li>Creating a <code class="docutils literal"><span class="pre">.rst</span></code> file for the function/module you wish to document <br />
+(you can use the templates supplied here), and</li>
+<li>Add the name of the <code class="docutils literal"><span class="pre">.rst</span></code> file to the <code class="docutils literal"><span class="pre">toctree</span></code> in <code class="docutils literal"><span class="pre">index.rst</span></code> <br />
+(the source code for this page).</li>
 </ol>
 </li>
 <li>After editing the files, run <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> from inside the folder in which you installed sphinx. <br />
-(<strong>TIP OF THE DAY</strong>: actually, run <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> to clear the documentation cache and build from scratch)</li>
+(If you used “Option 2” above - this is the the <code class="docutils literal"><span class="pre">documentation</span></code> folder you copies) <br />
+(<strong>TIP OF THE DAY</strong>: actually, always run <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> to clear sphinx cache and build from scratch)</li>
 <li>To view locally - open the file <code class="docutils literal"><span class="pre">documentation/_build/html/index.html</span></code> in your browser, and enjoy the read :)</li>
-<li>To share - copy <code class="docutils literal"><span class="pre">documentation/_build/html/</span></code> into a new <code class="docutils literal"><span class="pre">docs</span></code> folder, <br />
-and use <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> to host your documentation:<ol class="arabic">
-<li>Go to the kwhbjewhbrlj2bel</li>
+<li>To share - you can use <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> to host your documentation: <br /><ol class="arabic">
+<li>Copy the content of <code class="docutils literal"><span class="pre">documentation/_build/html/</span></code> into a new <code class="docutils literal"><span class="pre">docs</span></code> folder, under the root of the project.</li>
+<li>Create an empty file <code class="docutils literal"><span class="pre">.nojekyll</span></code> inside <code class="docutils literal"><span class="pre">docs</span></code> folder <br />
+(this tells GitHub Pages to bypass the default <code class="docutils literal"><span class="pre">jekyll</span></code> themes and use the <code class="docutils literal"><span class="pre">html</span></code> and <code class="docutils literal"><span class="pre">css</span></code> in your project)</li>
+<li>Push your changes to master branch.</li>
+<li>In your repository on GitHub, go to “Settings” -&gt; “GitHub Pages” -&gt; “Source” <br />
+and select “master branch /docs folder”.</li>
+<li>Share your beautiful documentation site at <code class="docutils literal"><span class="pre">https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/</span></code></li>
 </ol>
 </li>
 </ul>
@@ -123,7 +130,7 @@ cause of this tutorial justifies the means.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>This documentation was last updated on May 28, 2018.</p>
+<p>This documentation was last updated on May 29, 2018.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -206,29 +213,41 @@ OK Let&#39;s get to business:
 
     * ``pip install sphinx``
 
-    * Option 1: from the terminal, run ``sphinx-quickstart`` from the directory of the repository you wish to document, |br|
+    * Option 1: from the terminal, run ``sphinx-quickstart`` from the root of the project you wish to document, |br|
       and follow the suggestions of your choice from this tutorial. |br|
-      (My advice: install sphinx inside a dedicated documentation folder, to keep your project from clutter)
+      (My advice: install sphinx inside a dedicated ``documentation`` folder, to keep your project from clutter)
 
-    * Option 2: copy-paste the documentation folder in this project, and edit the relevant ``.rst`` files.
+    * Option 2: copy the ``documentation`` folder in this repository and make it a subdirectory in your local project, |br|
+      and edit the relevant ``.rst`` files.
 
-    * On any case, the way to add pages to your documentation, is by:
+    * On any case, the way to add a page to your documentation, is by:
 
-      #. creating a ``.rst`` file for the function/module |br|
-         you wish to document (you can use the templates supplied here), and
+      #. Creating a ``.rst`` file for the function/module you wish to document |br|
+         (you can use the templates supplied here), and
 
-      #. add the name of the ``.rst`` file to the |br|
-         ``toctree`` in ``index.rst`` (the source code for this page).
+      #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst`` |br|
+         (the source code for this page).
 
     * After editing the files, run ``make html`` from inside the folder in which you installed sphinx. |br|
-      (**TIP OF THE DAY**: actually, run ``make clean html`` to clear the documentation cache and build from scratch)
+      (If you used &quot;Option 2&quot; above - this is the the ``documentation`` folder you copies) |br|
+      (**TIP OF THE DAY**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
 
     * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
 
-    * To share - copy ``documentation/_build/html/`` into a new ``docs`` folder, |br|
-      and use `GitHub Pages &lt;https://pages.github.com/&gt;`_ to host your documentation:
+    * To share - you can use `GitHub Pages &lt;https://pages.github.com/&gt;`_ to host your documentation: |br|
 
-      #. Go to the kwhbjewhbrlj2bel
+      #. Copy the content of ``documentation/_build/html/`` into a new ``docs`` folder, under the root of the project.
+
+      #. Create an empty file ``.nojekyll`` inside ``docs`` folder |br|
+         (this tells GitHub Pages to bypass the default ``jekyll`` themes and use the ``html`` and ``css`` in your project)
+
+      #. Push your changes to master branch.
+
+      #. In your repository on GitHub, go to &quot;Settings&quot; -&gt; &quot;GitHub Pages&quot; -&gt; &quot;Source&quot; |br|
+         and select &quot;master branch /docs folder&quot;.
+
+      #. Share your beautiful documentation site at ``https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/``
+
 
 
 |

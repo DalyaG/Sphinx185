@@ -70,29 +70,41 @@ OK Let's get to business:
 
     * ``pip install sphinx``
 
-    * Option 1: from the terminal, run ``sphinx-quickstart`` from the directory of the repository you wish to document, |br|
+    * Option 1: from the terminal, run ``sphinx-quickstart`` from the root of the project you wish to document, |br|
       and follow the suggestions of your choice from this tutorial. |br|
-      (My advice: install sphinx inside a dedicated documentation folder, to keep your project from clutter)
+      (My advice: install sphinx inside a dedicated ``documentation`` folder, to keep your project from clutter)
 
-    * Option 2: copy-paste the documentation folder in this project, and edit the relevant ``.rst`` files.
+    * Option 2: copy the ``documentation`` folder in this repository and make it a subdirectory in your local project, |br|
+      and edit the relevant ``.rst`` files.
 
-    * On any case, the way to add pages to your documentation, is by:
+    * On any case, the way to add a page to your documentation, is by:
 
-      #. creating a ``.rst`` file for the function/module |br|
-         you wish to document (you can use the templates supplied here), and
+      #. Creating a ``.rst`` file for the function/module you wish to document |br|
+         (you can use the templates supplied here), and
 
-      #. add the name of the ``.rst`` file to the |br|
-         ``toctree`` in ``index.rst`` (the source code for this page).
+      #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst`` |br|
+         (the source code for this page).
 
     * After editing the files, run ``make html`` from inside the folder in which you installed sphinx. |br|
-      (**TIP OF THE DAY**: actually, run ``make clean html`` to clear the documentation cache and build from scratch)
+      (If you used "Option 2" above - this is the the ``documentation`` folder you copies) |br|
+      (**TIP OF THE DAY**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
 
     * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
 
-    * To share - copy ``documentation/_build/html/`` into a new ``docs`` folder, |br|
-      and use `GitHub Pages <https://pages.github.com/>`_ to host your documentation:
+    * To share - you can use `GitHub Pages <https://pages.github.com/>`_ to host your documentation: |br|
 
-      #. Go to the kwhbjewhbrlj2bel
+      #. Copy the content of ``documentation/_build/html/`` into a new ``docs`` folder, under the root of the project.
+
+      #. Create an empty file ``.nojekyll`` inside ``docs`` folder |br|
+         (this tells GitHub Pages to bypass the default ``jekyll`` themes and use the ``html`` and ``css`` in your project)
+
+      #. Push your changes to master branch.
+
+      #. In your repository on GitHub, go to "Settings" -> "GitHub Pages" -> "Source" |br|
+         and select "master branch /docs folder".
+
+      #. Share your beautiful documentation site at ``https://<your_git_usrname>.github.io/<project_name>/``
+
 
 
 |
