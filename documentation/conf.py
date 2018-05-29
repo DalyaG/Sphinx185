@@ -38,6 +38,7 @@ source_suffix = ['.rst']
 # This is the name of the main page of the project.
 # It means that you need to have an `index.rst` file where you will design the landing page of your project.
 # It will be rendered into an .html page that you can find at: `_build/html/index.html`
+# (this is a standard name. change it only if you know what you are doing)
 master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
