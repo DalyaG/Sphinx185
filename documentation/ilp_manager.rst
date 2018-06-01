@@ -25,8 +25,8 @@ This class models Euler's 185th riddle with the following Integer Linear Problem
 
 |
 
-Class Methods
-######################################################
+Class API
+#########
 
 .. Notice the markers line is longer than the headline.
 .. It is allowed. but markers lines shorter than headlines are not allowed.
