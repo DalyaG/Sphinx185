@@ -52,7 +52,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ul class="simple">
+<ol class="arabic simple">
 <li><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></li>
 <li>Copy the <code class="docutils literal"><span class="pre">documentation_template_for_your_next_project</span></code> folder in this repository, <br />
 make it a subdirectory in your local project and rename it <code class="docutils literal"><span class="pre">documentation</span></code>.</li>
@@ -65,7 +65,7 @@ make it a subdirectory in your local project and rename it <code class="docutils
 </ol>
 </li>
 <li>In terminal, inside the <code class="docutils literal"><span class="pre">documentation</span></code> folder, run <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code>. <br />
-(<strong>TIP OF THE DAY</strong>: actually, always run <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> to clear sphinx cache and build from scratch)</li>
+(<strong>TIP OF THE WEEK</strong>: actually, always run <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> to clear sphinx cache and build from scratch)</li>
 <li>To view locally - open the file <code class="docutils literal"><span class="pre">documentation/_build/html/index.html</span></code> in your browser, and enjoy the read :)</li>
 <li>To share - you can use <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> to host your documentation: <br /><ol class="arabic">
 <li>Copy the content of <code class="docutils literal"><span class="pre">documentation/_build/html/</span></code> into a new <code class="docutils literal"><span class="pre">docs</span></code> folder, under the root of the project.</li>
@@ -77,7 +77,20 @@ and select “master branch /docs folder”.</li>
 <li>Share your beautiful documentation site at <code class="docutils literal"><span class="pre">https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/</span></code></li>
 </ol>
 </li>
-</ul>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title first">When updating your documentation:</p>
+<ol class="arabic simple">
+<li>Delete everything in <code class="docutils literal"><span class="pre">docs</span></code> besides the <code class="docutils literal"><span class="pre">.nojekyll</span></code> file.</li>
+<li>Commit your changes.</li>
+<li>Copy the new content of <code class="docutils literal"><span class="pre">documentation/_build/html/</span></code> into <code class="docutils literal"><span class="pre">docs</span></code>.</li>
+<li>Commit and push your changes.</li>
+<li>Wait a few minutes for your website on GitHub Pages to be updated.</li>
+</ol>
+</div>
 <p><a class="reference internal" href="index.html#mastertoc"><span class="std std-ref">Return Home</span></a></p>
 </div>
 

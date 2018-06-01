@@ -129,7 +129,6 @@ div.section ul, div.sphinxsidebar ul {
   list-style: none;
   margin-left: 0;
   padding-left: 2.2em;
-  text-indent: -1.2em;
 }
 
 div.sphinxsidebar ul > li:before {
@@ -141,29 +140,40 @@ div.sphinxsidebar p.topless {
   padding-left: 1em;
 }
 
-div.section ol {
-  counter-reset: li;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 2.6em;
-  text-indent: -1.6em;
-}
-  
-
 div.section li {
   margin: 0.8em 0.1em 0.4em 1em;
 }
 
+div.section ol {
+  counter-reset: li;
+  list-style: decimal;
+  margin-left: 0;
+  padding-left: 2.6em;
+  /* text-indent: -1.6em; */
+}
+
+div.section ol li ol {
+  list-style: lower-latin;
+}
+
+div.section ul {
+  list-style: square;
+}
+
+
+/*
 div.section ul > li:before {
   content: "\2023 \2002";
   color: #cccccc;
 }
+
 
 div.section ol > li:before {
   content: counter(li) ". \2000";
   counter-increment: li;
   color: #cccccc;
 }
+*/
 
 div.section li p {
   margin: 0;
