@@ -4,6 +4,8 @@ documentation helper, using the solution of
 [Problem 185 from Project Euler](https://projecteuler.net/problem=185) 
 as a case study.
 
+## How to use this for YOUR next project
+
 
 You can start your onboarding with sphinx by browsing 
 [the documentation of this repository](https://dalyag.github.io/Sphinx185/index.html),
@@ -18,6 +20,17 @@ To apply all this, you can use these instructions (also found
 [here](https://dalyag.github.io/Sphinx185/how_to_use_this_for_your_next_project.html)):
 
 ![HowToUseThisForYourNextProject](../master/data/HowToUseThisForYourNextProject.png)
+
+
+## How this project came to be
+
+This tutorial was created for [PyCon Israel 2018](https://il.pycon.org/2018/en/).
+
+The slides for the talk can be found 
+[here](https://github.com/DalyaG/Sphinx185/HelpYourColleaguesHelpThemselves_aSphinxTutorial.pdf), 
+in this repository.
+
+![TalkFirstSlide](../master/data/TalkFirstSlide.jpg)
 
 Enjoy!
 
