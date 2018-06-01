@@ -27,7 +27,7 @@ To apply all this, you can use these instructions (also found
 This tutorial was created for [PyCon Israel 2018](https://il.pycon.org/2018/en/).
 
 The slides for the talk can be found 
-[here](https://github.com/DalyaG/Sphinx185/HelpYourColleaguesHelpThemselves_aSphinxTutorial.pdf), 
+[here](https://github.com/DalyaG/Sphinx185/blob/master/HelpYourColleaguesHelpThemselves_aSphinxTutorial.pdf), 
 in this repository.
 
 ![TalkFirstSlide](../master/data/TalkFirstSlide.jpg)
