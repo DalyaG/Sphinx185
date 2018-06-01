@@ -1,0 +1,333 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to Sphinx185’s documentation! &#8212; Sphinx185  documentation</title>
+    <link rel="stylesheet" href="_static/graphite.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Euler’s 185th Riddle" href="riddle_description.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="riddle_description.html" title="Euler’s 185th Riddle"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-sphinx185-s-documentation">
+<h1>Welcome to Sphinx185’s documentation!<a class="headerlink" href="#welcome-to-sphinx185-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This documentation follows the solution of the 185th riddle from <a class="reference external" href="https://projecteuler.net/problem=185">Project Euler</a>.</p>
+<p>The goal of this piece is to help make <a class="reference external" href="http://www.sphinx-doc.org/en/master/">Sphinx</a> accessible and easy to use.</p>
+<p>Feel as free as you can to copy, paste and change anything you see here.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The source code is available <a class="reference external" href="https://github.com/DalyaG/Sphinx185">here</a>.</p>
+<p><span class="pinktext">Hope you find this useful!</span></p>
+<p><a class="reference external" href="https://github.com/DalyaG">&#64;DalyaG</a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="ok-let-s-get-to-business">
+<h2>OK Let’s get to business:<a class="headerlink" href="#ok-let-s-get-to-business" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="toctree-wrapper compound" id="mastertoc">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="riddle_description.html">Euler’s 185th Riddle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_euler_185_solver.html">Solver Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_parser.html">Input Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="naming_utils.html">Naming Utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ilp_manager.html">The ILP Manager class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf.html">The main configurations file: conf.py</a></li>
+</ul>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title first">How to use this for YOUR next project:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></li>
+<li>Option 1: from the terminal, run <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> from the root of the project you wish to document, <br />
+and follow the suggestions of your choice from this tutorial. <br />
+(My advice: install sphinx inside a dedicated <code class="docutils literal"><span class="pre">documentation</span></code> folder, to keep your project from clutter)</li>
+<li>Option 2: copy the <code class="docutils literal"><span class="pre">documentation</span></code> folder in this repository and make it a subdirectory in your local project, <br />
+and edit the relevant <code class="docutils literal"><span class="pre">.rst</span></code> files.</li>
+<li>On any case, the way to add a page to your documentation, is by:<ol class="arabic">
+<li>Creating a <code class="docutils literal"><span class="pre">.rst</span></code> file for the function/module you wish to document <br />
+(you can use the templates supplied here), and</li>
+<li>Add the name of the <code class="docutils literal"><span class="pre">.rst</span></code> file to the <code class="docutils literal"><span class="pre">toctree</span></code> in <code class="docutils literal"><span class="pre">index.rst</span></code> <br />
+(the source code for this page).</li>
+</ol>
+</li>
+<li>After editing the files, run <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> from inside the <code class="docutils literal"><span class="pre">documentation</span></code> folder. <br />
+(<strong>TIP OF THE DAY</strong>: actually, always run <code class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">html</span></code> to clear sphinx cache and build from scratch)</li>
+<li>To view locally - open the file <code class="docutils literal"><span class="pre">documentation/_build/html/index.html</span></code> in your browser, and enjoy the read :)</li>
+<li>To share - you can use <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> to host your documentation: <br /><ol class="arabic">
+<li>Copy the content of <code class="docutils literal"><span class="pre">documentation/_build/html/</span></code> into a new <code class="docutils literal"><span class="pre">docs</span></code> folder, under the root of the project.</li>
+<li>Create an empty file <code class="docutils literal"><span class="pre">.nojekyll</span></code> inside <code class="docutils literal"><span class="pre">docs</span></code> folder <br />
+(this tells GitHub Pages to bypass the default <code class="docutils literal"><span class="pre">jekyll</span></code> themes and use the <code class="docutils literal"><span class="pre">html</span></code> and <code class="docutils literal"><span class="pre">css</span></code> in your project)</li>
+<li>Push your changes to master branch.</li>
+<li>In your repository on GitHub, go to “Settings” -&gt; “GitHub Pages” -&gt; “Source” <br />
+and select “master branch /docs folder”.</li>
+<li>Share your beautiful documentation site at <code class="docutils literal"><span class="pre">https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/</span></code></li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title first">Tiny disclaimer:</p>
+<p>As I enjoy Project Euler greatly, I was hesitant to publish my solution online.</p>
+<p>Yet, since I saw many similar solutions are already available, I decided the educational
+cause of this tutorial justifies the means.</p>
+<p>So all you Euler buddies out there - hope you share my view :)</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This documentation was last updated on Jun 01, 2018.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="this-page-was-generated-using-this-rst-code">
+<h2>This page was generated using this .rst code:<a class="headerlink" href="#this-page-was-generated-using-this-rst-code" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>.. Sphinx185 documentation master file, created by
+   sphinx-quickstart on Sat May 12 19:34:31 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Sphinx185&#39;s documentation!
+=====================================
+|
+
+This documentation follows the solution of the 185th riddle from `Project Euler &lt;https://projecteuler.net/problem=185&gt;`_.
+
+The goal of this piece is to help make `Sphinx &lt;http://www.sphinx-doc.org/en/master/&gt;`_ accessible and easy to use.
+
+Feel as free as you can to copy, paste and change anything you see here.
+
+|
+
+The source code is available `here &lt;https://github.com/DalyaG/Sphinx185&gt;`_.
+
+.. role:: pinktext
+
+.. To make sure this is indeed colored pink, I added a .pinktext class to graphite.css
+
+:pinktext:`Hope you find this useful!`
+
+`@DalyaG &lt;https://github.com/DalyaG&gt;`_
+
+|
+
+OK Let&#39;s get to business:
+*************************
+
+|
+
+.. maxdepth = 1 means the Table of Contents will only links to the separate pages of the documentation.
+   Increasing this number will result in deeper links to subtitles etc.
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :name: mastertoc
+
+   riddle_description
+   run_euler_185_solver
+   input_parser
+   naming_utils
+   ilp_manager
+   conf
+
+
+
+* :ref:`genindex`
+
+|
+
+
+.. TIP OF THE HOUR:
+   The following command allows me to choose line breaks inside a &quot;note&quot; environment.
+   Outside a special environment, i could use
+   | vertical bars
+   | to format lines
+   | to my desire
+
+.. |br| raw:: html
+
+   &lt;br /&gt;
+
+.. topic:: How to use this for YOUR next project:
+
+    * ``pip install sphinx``
+
+    * Option 1: from the terminal, run ``sphinx-quickstart`` from the root of the project you wish to document, |br|
+      and follow the suggestions of your choice from this tutorial. |br|
+      (My advice: install sphinx inside a dedicated ``documentation`` folder, to keep your project from clutter)
+
+    * Option 2: copy the ``documentation`` folder in this repository and make it a subdirectory in your local project, |br|
+      and edit the relevant ``.rst`` files.
+
+    * On any case, the way to add a page to your documentation, is by:
+
+      #. Creating a ``.rst`` file for the function/module you wish to document |br|
+         (you can use the templates supplied here), and
+
+      #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst`` |br|
+         (the source code for this page).
+
+    * After editing the files, run ``make html`` from inside the ``documentation`` folder. |br|
+      (**TIP OF THE DAY**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
+
+    * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
+
+    * To share - you can use `GitHub Pages &lt;https://pages.github.com/&gt;`_ to host your documentation: |br|
+
+      #. Copy the content of ``documentation/_build/html/`` into a new ``docs`` folder, under the root of the project.
+
+      #. Create an empty file ``.nojekyll`` inside ``docs`` folder |br|
+         (this tells GitHub Pages to bypass the default ``jekyll`` themes and use the ``html`` and ``css`` in your project)
+
+      #. Push your changes to master branch.
+
+      #. In your repository on GitHub, go to &quot;Settings&quot; -&gt; &quot;GitHub Pages&quot; -&gt; &quot;Source&quot; |br|
+         and select &quot;master branch /docs folder&quot;.
+
+      #. Share your beautiful documentation site at ``https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/``
+
+
+
+|
+
+.. topic:: Tiny disclaimer:
+
+    As I enjoy Project Euler greatly, I was hesitant to publish my solution online.
+
+    Yet, since I saw many similar solutions are already available, I decided the educational
+    cause of this tutorial justifies the means.
+
+    So all you Euler buddies out there - hope you share my view :)
+
+|
+
+This documentation was last updated on |today|.
+
+|
+|
+
+This page was generated using this .rst code:
+*********************************************
+
+|
+
+.. literalinclude:: index.rst
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/sphinx_and_dalya.png" alt="Logo"/>
+            </a></p>
+<h3><a href="#">Sphinx185</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="riddle_description.html">Euler’s 185th Riddle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_euler_185_solver.html">Solver Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_parser.html">Input Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="naming_utils.html">Naming Utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ilp_manager.html">The ILP Manager class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conf.html">The main configurations file: conf.py</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="riddle_description.html" title="Euler’s 185th Riddle"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, DalyaG.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+    </div>
+  </body>
+</html>
