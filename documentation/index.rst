@@ -85,8 +85,7 @@ OK Let's get to business:
       #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst`` |br|
          (the source code for this page).
 
-    * After editing the files, run ``make html`` from inside the folder in which you installed sphinx. |br|
-      (If you used "Option 2" above - this is the the ``documentation`` folder you copies) |br|
+    * After editing the files, run ``make html`` from inside the ``documentation`` folder. |br|
       (**TIP OF THE DAY**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
 
     * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
