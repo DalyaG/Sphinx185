@@ -7,12 +7,15 @@ as a case study.
 
 You can start your onboarding with sphinx by browsing 
 [the documentation of this repository](https://dalyag.github.io/Sphinx185/index.html),
-that has this landing page:
+that has this home page:
 
 ![Documentation Landing Page](../master/data/LandingPage.png)
 
 At the button of every page, you can find the source code 
-that will help you generate cool documentation for your own project:
+that will help you generate cool documentation for your own project!
+
+To apply all this, you can use these instructions (also found 
+[here](https://dalyag.github.io/Sphinx185/how_to_use_this_for_your_next_project.html)):
 
 ![HowToUseThisForYourNextProject](../master/data/HowToUseThisForYourNextProject.png)
 
