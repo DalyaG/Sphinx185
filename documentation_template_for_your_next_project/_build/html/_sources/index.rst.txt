@@ -25,7 +25,7 @@ The source code is available `here <https://github.com/usrname/projectname>`_.
 
 .. toctree::
    :maxdepth: 1
-   :name: mastertoc_template
+   :name: mastertoc
 
    dummy_class_template_for_your_next_project
 
@@ -38,5 +38,4 @@ The source code is available `here <https://github.com/usrname/projectname>`_.
 This documentation was last updated on |today|.
 
 .. Finished personalizing all the relevant details? Great! Now make this your main index.rst,
-   Replace 'mastertoc_template' with 'mastertoc' (here and in .rst files that link this as "home")
    And run `make clean html` from your documentation folder :)

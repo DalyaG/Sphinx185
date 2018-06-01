@@ -6,4 +6,4 @@ This is a template for including classes
 
 |
 
-:ref:`Return Home <mastertoc_template>`
+:ref:`Return Home <mastertoc>`
