@@ -9,7 +9,9 @@ Welcome to Sphinx185's documentation!
 
 This documentation follows the solution of the 185th riddle from `Project Euler <https://projecteuler.net/problem=185>`_.
 
-The goal of this piece is to help make `Sphinx <http://www.sphinx-doc.org/en/master/>`_ accessible and easy to use.
+The goal of this project is to help make `Sphinx <http://www.sphinx-doc.org/en/master/>`_ accessible and easy to use.
+
+To use this for YOUR next project, browse this documentation and follow the instructions :doc:`here <how_to_use_this_for_your_next_project>`.
 
 Feel as free as you can to copy, paste and change anything you see here.
 
@@ -23,7 +25,7 @@ The source code is available `here <https://github.com/DalyaG/Sphinx185>`_.
 
 :pinktext:`Hope you find this useful!`
 
-`@DalyaG <https://github.com/DalyaG>`_
+`DalyaG <https://github.com/DalyaG>`_
 
 |
 
@@ -47,64 +49,11 @@ OK Let's get to business:
    naming_utils
    ilp_manager
    conf
+   how_to_use_this_for_your_next_project
 
 
 
 * :ref:`genindex`
-
-|
-
-
-.. TIP OF THE HOUR:
-   The following command allows me to choose line breaks inside a "note" environment.
-   Outside a special environment, i could use
-   | vertical bars
-   | to format lines
-   | to my desire
-
-.. |br| raw:: html
-
-   <br />
-
-.. topic:: How to use this for YOUR next project:
-
-    * ``pip install sphinx``
-
-    * Option 1: from the terminal, run ``sphinx-quickstart`` from the root of the project you wish to document, |br|
-      and follow the suggestions of your choice from this tutorial. |br|
-      (My advice: install sphinx inside a dedicated ``documentation`` folder, to keep your project from clutter)
-
-    * Option 2: copy the ``documentation`` folder in this repository and make it a subdirectory in your local project, |br|
-      and edit the relevant ``.rst`` files.
-
-    * On any case, the way to add a page to your documentation, is by:
-
-      #. Creating a ``.rst`` file for the function/module you wish to document |br|
-         (you can use the templates supplied here), and
-
-      #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst`` |br|
-         (the source code for this page).
-
-    * After editing the files, run ``make html`` from inside the ``documentation`` folder. |br|
-      (**TIP OF THE DAY**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
-
-    * To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
-
-    * To share - you can use `GitHub Pages <https://pages.github.com/>`_ to host your documentation: |br|
-
-      #. Copy the content of ``documentation/_build/html/`` into a new ``docs`` folder, under the root of the project.
-
-      #. Create an empty file ``.nojekyll`` inside ``docs`` folder |br|
-         (this tells GitHub Pages to bypass the default ``jekyll`` themes and use the ``html`` and ``css`` in your project)
-
-      #. Push your changes to master branch.
-
-      #. In your repository on GitHub, go to "Settings" -> "GitHub Pages" -> "Source" |br|
-         and select "master branch /docs folder".
-
-      #. Share your beautiful documentation site at ``https://<your_git_usrname>.github.io/<project_name>/``
-
-
 
 |
 
