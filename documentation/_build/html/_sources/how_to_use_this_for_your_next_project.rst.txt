@@ -66,3 +66,14 @@ How To Use This for YOUR Next Project :)
 
 
 :ref:`Return Home <mastertoc>`
+
+
+|
+|
+
+This page was generated using this .rst code:
+*********************************************
+
+|
+
+.. literalinclude:: how_to_use_this_for_your_next_project.rst

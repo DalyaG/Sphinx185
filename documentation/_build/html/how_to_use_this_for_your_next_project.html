@@ -92,6 +92,97 @@ and select “master branch /docs folder”.</li>
 </ol>
 </div>
 <p><a class="reference internal" href="index.html#mastertoc"><span class="std std-ref">Return Home</span></a></p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="this-page-was-generated-using-this-rst-code">
+<h2>This page was generated using this .rst code:<a class="headerlink" href="#this-page-was-generated-using-this-rst-code" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>How To Use This for YOUR Next Project :)
+========================================
+|
+
+
+.. TIP OF THE HOUR:
+   The following command allows me to choose line breaks inside a &quot;numbering&quot; environment.
+   Outside a special environment, i could use
+   | vertical bars
+   | to format lines
+   | to my desire
+
+.. |br| raw:: html
+
+   &lt;br /&gt;
+
+
+#. ``pip install sphinx``
+
+#. Copy the ``documentation_template_for_your_next_project`` folder in this repository, |br|
+   make it a subdirectory in your local project and rename it ``documentation``.
+
+#. Edit ``conf.py`` by searching the pattern ``#CHNAGEME#`` inside the file and follow the instructions.
+
+#. Edit ``index.rst`` by following the inline instructions.
+
+#. To add a page to your documentation:
+
+   #. Create a ``.rst`` file for the function/module you wish to document |br|
+      (you can use the templates supplied here), and
+
+   #. Add the name of the ``.rst`` file to the ``toctree`` in ``index.rst``.
+
+#. In terminal, inside the ``documentation`` folder, run ``make html``. |br|
+   (**TIP OF THE WEEK**: actually, always run ``make clean html`` to clear sphinx cache and build from scratch)
+
+#. To view locally - open the file ``documentation/_build/html/index.html`` in your browser, and enjoy the read :)
+
+#. To share - you can use `GitHub Pages &lt;https://pages.github.com/&gt;`_ to host your documentation: |br|
+
+   #. Copy the content of ``documentation/_build/html/`` into a new ``docs`` folder, under the root of the project.
+
+   #. Create an empty file ``.nojekyll`` inside ``docs`` folder |br|
+      (this tells GitHub Pages to bypass the default ``jekyll`` themes and use the ``html`` and ``css`` in your project)
+
+   #. Push your changes to master branch.
+
+   #. In your repository on GitHub, go to &quot;Settings&quot; -&gt; &quot;GitHub Pages&quot; -&gt; &quot;Source&quot; |br|
+      and select &quot;master branch /docs folder&quot;.
+
+   #. Share your beautiful documentation site at ``https://&lt;your_git_usrname&gt;.github.io/&lt;project_name&gt;/``
+
+|
+
+.. topic:: When updating your documentation:
+
+    #. Delete everything in ``docs`` besides the ``.nojekyll`` file.
+
+    #. Commit your changes.
+
+    #. Copy the new content of ``documentation/_build/html/`` into ``docs``.
+
+    #. Commit and push your changes.
+
+    #. Wait a few minutes for your website on GitHub Pages to be updated.
+
+
+:ref:`Return Home &lt;mastertoc&gt;`
+
+
+|
+|
+
+This page was generated using this .rst code:
+*********************************************
+
+|
+
+.. literalinclude:: how_to_use_this_for_your_next_project.rst
+</pre></div>
+</div>
+</div>
 </div>
 
 
