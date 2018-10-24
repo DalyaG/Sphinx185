@@ -1,0 +1,304 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The main configurations file: conf.py &#8212; Sphinx185  documentation</title>
+    <link rel="stylesheet" href="_static/graphite.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How To Use This for YOUR Next Project :)" href="how_to_use_this_for_your_next_project.html" />
+    <link rel="prev" title="The ILP Manager class" href="ilp_manager.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="how_to_use_this_for_your_next_project.html" title="How To Use This for YOUR Next Project :)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ilp_manager.html" title="The ILP Manager class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-main-configurations-file-conf-py">
+<h1>The main configurations file: conf.py<a class="headerlink" href="#the-main-configurations-file-conf-py" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Below is the code for <code class="docutils literal"><span class="pre">conf.py</span></code>, the main configuration file that is used for generating this documentation.</p>
+<p>This file was originally made by running <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code>.</p>
+<p>It was modified and customized such that, hopefully, it has a clearer structure,
+and is easier to re-modify for the sake of YOUR next project :)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">This is the main file in which the configuration for the documentation is made.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#</span>
+<span class="c1"># Sphinx185 documentation build configuration file, created by</span>
+<span class="c1"># sphinx-quickstart on Sat May 12 19:34:31 2018.</span>
+
+<span class="c1"># DalyaG: This file was heavily modified from its original build.</span>
+<span class="c1"># Hope you find this useful :)</span>
+
+
+<span class="c1"># -- Define here your working directory -------------------------------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;/Users/dalya/Documents/Sphinx185&#39;</span><span class="p">))</span>
+
+
+<span class="c1"># -- Some general info  about the project -----------------------------------------------------------------------------</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Sphinx185&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;2018, DalyaG&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;DalyaG&#39;</span>
+
+
+<span class="c1"># -- A few basic configurations ---------------------------------------------------------------------------------------</span>
+
+<span class="c1"># The documentation in this project will be mostly generated from .rst files</span>
+<span class="c1"># In This project, every auto-documented module/class has its own .rst file, under the main documentation dir,</span>
+<span class="c1">#   which is rendered into an .html page.</span>
+<span class="c1"># Get more information here: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html</span>
+<span class="n">source_suffix</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.rst&#39;</span><span class="p">]</span>
+
+<span class="c1"># This is the name of the main page of the project.</span>
+<span class="c1"># It means that you need to have an `index.rst` file where you will design the landing page of your project.</span>
+<span class="c1"># It will be rendered into an .html page that you can find at: `_build/html/index.html`</span>
+<span class="c1"># (this is a standard name. change it only if you know what you are doing)</span>
+<span class="n">master_doc</span> <span class="o">=</span> <span class="s1">&#39;index&#39;</span>
+
+<span class="c1"># List of patterns, relative to source directory, that match files and</span>
+<span class="c1"># directories to ignore when looking for source files.</span>
+<span class="c1"># This patterns also effect to html_static_path and html_extra_path</span>
+<span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_build&#39;</span><span class="p">]</span>
+
+<span class="c1"># List here any paths that contain templates, relative to this directory.</span>
+<span class="c1"># You can find some not-so-intuitive information here: http://www.sphinx-doc.org/en/master/templating.html</span>
+<span class="c1"># But the best way to learn is by example, right? :)</span>
+<span class="c1"># So, for example, in this project, I wanted to change the title of the Table Of Contents in the sidebar.</span>
+<span class="c1">#   So I copied `&lt;Sphinx install dir&gt;/themes/basic/globaltoc.html` into the `_templates` folder,</span>
+<span class="c1">#      and replaced &#39;Table of Content&#39; with &#39;Sphinx185&#39;.</span>
+<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_templates&#39;</span><span class="p">]</span>
+
+
+<span class="c1"># -- Define and configure non-default extensions ----------------------------------------------------------------------</span>
+
+<span class="c1"># You can find a list of available extension here: http://www.sphinx-doc.org/en/master/extensions.html</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx.ext.imgmath&#39;</span><span class="p">]</span>
+
+<span class="c1"># Above extensions explanation and configurations:</span>
+
+<span class="c1"># todo: When you use the syntax &quot;.. todo:: some todo comment&quot; in your docstring,</span>
+<span class="c1">#         it will appear in a highlighted box in the documentation.</span>
+<span class="c1">#       In order for this extension to work, make sure you include the following:</span>
+<span class="n">todo_include_todos</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># viewcode: Next to each function/module in the documentation, you will have an internal link to the source code.</span>
+<span class="c1">#           The source code will have colors defined by the Pygments (syntax highlighting) style.</span>
+<span class="c1">#           You can checkout the available pygments here: https://help.farbox.com/pygments.html</span>
+<span class="n">pygments_style</span> <span class="o">=</span> <span class="s1">&#39;native&#39;</span>
+
+<span class="c1"># autodoc: The best thing about Sphinx IMHO is autodoc.</span>
+<span class="c1">#          It allows Sphinx to automatically generate documentation for the docstrings in your code.</span>
+<span class="c1">#          Get more info here: http://www.sphinx-doc.org/en/master/ext/autodoc.html</span>
+<span class="c1"># Some useful configurations:</span>
+<span class="n">autoclass_content</span> <span class="o">=</span> <span class="s2">&quot;both&quot;</span>  <span class="c1"># Include both the class&#39;s and the init&#39;s docstrings.</span>
+<span class="n">autodoc_member_order</span> <span class="o">=</span> <span class="s1">&#39;bysource&#39;</span>  <span class="c1"># In the documentation, keep the same order of members as in the code.</span>
+<span class="n">autodoc_default_flags</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;members&#39;</span><span class="p">]</span>  <span class="c1"># Default: include the docstrings of all the class/module members.</span>
+
+<span class="c1"># imgmath: Sphinx allows use of LaTeX in the html documentation, but not directly. It is first rendered to an image.</span>
+<span class="c1"># You can add here whatever preamble you are used to adding to your LaTeX document.</span>
+<span class="n">imgmath_latex_preamble</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">\usepackage</span><span class="si">{xcolor}</span><span class="s1"></span>
+<span class="s1">\definecolor</span><span class="si">{offwhite}{rgb}</span><span class="s1">{238,238,238}</span>
+<span class="s1">\everymath{\color</span><span class="si">{offwhite}</span><span class="s1">}</span>
+<span class="s1">\everydisplay{\color</span><span class="si">{offwhite}</span><span class="s1">}</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+
+<span class="c1"># -- Options for HTML output -----------------------------------------------------------------------------------------</span>
+
+<span class="c1"># The theme to use for HTML and HTML Help pages.</span>
+<span class="c1"># You can find available themes here: http://www.sphinx-doc.org/en/master/theming.html</span>
+<span class="c1"># In this project, I wanted to use a non-default theme, and so I downloaded the `graphite` template from here:</span>
+<span class="c1">#    https://github.com/Cartroo/sphinx-theme-graphite</span>
+<span class="c1">#    Some adjustments I made to graphite:</span>
+<span class="c1">#    - I did not use the pygment configuration, and so removed &quot;pygments_style = graphite.GraphiteStyle&quot; from theme.conf</span>
+<span class="c1">#                                                      and deleted graphite.py</span>
+<span class="c1">#    - In the static folder, I configured several classes both in graphite.css and in html4css1.css,</span>
+<span class="c1">#         you can download the original and compare to find those changes.</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;graphite&#39;</span>
+<span class="c1"># When using a non-built-in theme, define the path to your template code.</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">]</span>
+
+<span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
+<span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="c1"># so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.</span>
+<span class="n">html_static_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;_static&#39;</span><span class="p">]</span>
+
+<span class="c1"># Defining the static path allows me to add my own logo for the project:</span>
+<span class="c1">#   (make sure the theme of your choice support the use of logo.</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;_static/sphinx_and_dalya.png&#39;</span>
+
+<span class="c1"># Custom sidebar templates, must be a dictionary that maps document names to template names.</span>
+<span class="c1"># In This project I chose to include in the sidebar:</span>
+<span class="c1">#   - Table of Contents: I chose globaltoc as it is less refined,</span>
+<span class="c1">#     and configured the title by editing the globaltoc template (see explanation above, in the templates_path comment)</span>
+<span class="c1">#   - Search box: appears below the TOc, and can be configured by editing css attributes.</span>
+<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;globaltoc.html&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;searchbox.html&#39;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="this-page-was-generated-using-this-rst-code">
+<h2>This page was generated using this .rst code:<a class="headerlink" href="#this-page-was-generated-using-this-rst-code" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>The main configurations file: conf.py
+=====================================
+|
+
+Below is the code for ``conf.py``, the main configuration file that is used for generating this documentation.
+
+This file was originally made by running ``sphinx-quickstart``.
+
+It was modified and customized such that, hopefully, it has a clearer structure,
+and is easier to re-modify for the sake of YOUR next project :)
+
+
+
+|
+
+.. literalinclude:: conf.py
+
+|
+|
+
+This page was generated using this .rst code:
+*********************************************
+
+|
+
+.. literalinclude:: conf.rst
+
+|
+|
+
+:ref:`Return Home &lt;mastertoc&gt;`
+
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="index.html#mastertoc"><span class="std std-ref">Return Home</span></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/sphinx_and_dalya.png" alt="Logo"/>
+            </a></p>
+<h3><a href="index.html">Sphinx185</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="riddle_description.html">Euler’s 185th Riddle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_euler_185_solver.html">Solver Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_parser.html">Input Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="naming_utils.html">Naming Utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ilp_manager.html">The ILP Manager class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The main configurations file: conf.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_use_this_for_your_next_project.html">How To Use This for YOUR Next Project :)</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="how_to_use_this_for_your_next_project.html" title="How To Use This for YOUR Next Project :)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ilp_manager.html" title="The ILP Manager class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Sphinx185  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, DalyaG.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+    </div>
+  </body>
+</html>
