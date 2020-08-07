@@ -4,6 +4,10 @@ documentation helper, using the solution of
 [Problem 185 from Project Euler](https://projecteuler.net/problem=185) 
 as a case study.
 
+Learn more about this project in this 
+[blog post](https://medium.com/free-code-camp/the-riddle-of-sphinx-how-to-document-your-code-easily-bf09a9a1804c)
+or [this talk](https://www.youtube.com/watch?v=3OAAL78PES8) on PyCaon Israel 2018
+
 ## How to use this for YOUR next project
 
 
